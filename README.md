@@ -62,7 +62,17 @@ The logic behind the successful working of these trees is that each node has a v
 ### Usage
 * Download / clone this repo with `git clone https://github.com/aklsh/self-balancing-tree` on terminal. This will create a folder named *`self-balancing-tree`*
 * `cd` into the folder
-* Run with `make`
+* To run in interactive mode, run with `make -s`.
+* To test for large input sizes, I have provided two `.txt` files in the folder `Test Inputs`. 
+  - *`sortInput.txt`* contains the input for the program in sorted order (numbers used: 1-500).
+  - *`randomInput.txt`* contains the input for the program with random numbers.  
+  - To run program with either of these inputs, run with `make -s < ./Test\ Inputs/<input file> > output.txt`.
+  - Executing the above command will create a file named `output.txt` in the current directory. 
+  - Open it and you will see the BST printed in dot format. 
+  - If you want to visualize it, use an online Graphviz site like:
+    - `http://www.webgraphviz.com/` 
+    - `https://dreampuf.github.io/GraphvizOnline/`
+	
 
 ---
 <a name="fn1"><sup>1</sup></a>: <a href = "https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree"> https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree </a>
